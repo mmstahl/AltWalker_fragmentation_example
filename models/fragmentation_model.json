@@ -1,0 +1,60 @@
+{
+	"name": "Frag_Builder",
+	"models": [
+		{
+			"name": "Fragment_factory",
+			"generator": "random(never)",
+			"startElementId": "v0",
+			"actions": [
+				"BytesLeft = 0;"
+			  ],
+			"vertices": [
+				{
+					"id": "v0",
+					"name": "START"
+				},
+				{
+					"id": "v1",
+					"name": "FRAGMENT"
+				},				
+				{
+					"id": "v2",
+					"name": "END"
+				}
+			],
+			"edges": [
+				{
+					"id": "e0",
+					"name": "FRAG_START",
+					"sourceVertexId": "v0",
+					"targetVertexId": "v1",
+					"description" : [ " "],
+					"guard": ""
+				},
+				{
+					"id": "e1",
+					"name": "FRAG_AGAIN",
+					"sourceVertexId": "v1",
+					"targetVertexId": "v1",
+					"description" : [ " "],
+					"guard": "BytesLeft > 0"
+				},
+				{
+					"id": "e2",
+					"name": "FRAG_END",
+					"sourceVertexId": "v1",
+					"targetVertexId": "v2",
+					"description" : [ " "],
+					"guard": "BytesLeft <= 0" 
+				},
+				{
+					"id": "e3",
+					"name": "NEW_MSG",
+					"sourceVertexId": "v2",
+					"targetVertexId": "v0",
+					"description" : [ " "]
+				}
+			]
+		}
+	]
+}
