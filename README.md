@@ -1,9 +1,6 @@
 # AltWalker_fragmentation_example
 An example how to use AltWalker to generate tests for de-fragmentation code. Includes installation instructions and tips. 
 
-
-AltWalker example – Packet fragmentation
-
 The instructions are for installation and execution on WSL (Windows Subsystem for Linux). It probably works well on any Linux installation, but I only worked with it on WSL. 
 
 Installation and resources
