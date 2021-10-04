@@ -36,7 +36,7 @@
 					"name": "FRAG_AGAIN",
 					"sourceVertexId": "v1",
 					"targetVertexId": "v1",
-					"description" : [ " "],
+					"description" : [ "Repeat this transition as long as there are bytes left"],
 					"guard": "BytesLeft > 0"
 				},
 				{
@@ -44,7 +44,7 @@
 					"name": "FRAG_END",
 					"sourceVertexId": "v1",
 					"targetVertexId": "v2",
-					"description" : [ " "],
+					"description" : [ "Take this transition when all bytes were put into fragments"],
 					"guard": "BytesLeft <= 0" 
 				},
 				{
@@ -52,7 +52,7 @@
 					"name": "NEW_MSG",
 					"sourceVertexId": "v2",
 					"targetVertexId": "v0",
-					"description" : [ " "]
+					"description" : [ "Take this transition to go back to the start point of the state machine, to create a new fragmented message"]
 				}
 			]
 		}

@@ -35,7 +35,7 @@ class Fragment_factory:
     #Vertices
     def START(self, data):
         # Message size is chosen at random, between 1501 and 64k bytes
-        # FOr simplicity, this model does NOT create messages that do not need fragmentation. 
+        # For simplicity, this model does NOT create messages that do not need fragmentation. 
         data['MsgLen'] = max(1501, round(random.random() * MAX_MSG_LEN))
         data['BytesLeft'] = int(data['MsgLen']) 
         dbg_write(f, "\nNew Message: ", "MsgLen = {} \n".format(data['MsgLen']))
