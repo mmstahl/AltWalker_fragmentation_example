@@ -6,8 +6,8 @@ The instructions are for installation and execution on WSL (Windows Subsystem fo
 Installation and resources
 1)	For Window users: Install WSL:  
 Instructions:  https://docs.microsoft.com/en-us/windows/wsl/install-manual . 
-Note that if you have a backup system running on your Windows machine, it will most likely NOT backup the WSL installation. So consider how to save your development files (maybe use Git or similar), so you don’t lose everything when (not “if”) your disk crashes. 
-Note also that the WSL takes disk space, but does not give back the space after you delete files in it. So the installation can grow to be quite large (10s or more GBytes). See this URL how to shrink the installation: https://stephenreescarter.net/how-to-shrink-a-wsl2-virtual-disk/ 
+ Note that if you have a backup system running on your Windows machine, it will most likely NOT backup the WSL installation. So consider how to save your development files (maybe use Git or similar), so you don’t lose everything when (not “if”) your disk crashes. 
+ Note also that the WSL takes disk space, but does not give back the space after you delete files in it. So the installation can grow to be quite large (10s or more GBytes). See this URL how to shrink the installation: https://stephenreescarter.net/how-to-shrink-a-wsl2-virtual-disk/ 
 2)	AltWalker installation instructions: https://gitlab.com/altom/AltWalker/AltWalker . Note that this example was developed and tested on WSL, with Ubuntu 20.04 distribution. 
 
 3)	AltWalker documentation: https://altom.gitlab.io/AltWalker/AltWalker/index.html
@@ -21,7 +21,7 @@ Running the example
 
 altwalker check -m models/fragmentation_model.json "random(vertex_coverage(100))"
 
-      A good model will give this result: 
+A good model will give this result: 
 
       Checking models syntax:
 
