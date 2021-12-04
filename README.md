@@ -38,6 +38,7 @@ altwalker online tests -m models/fragmentation_model.json "random(time_duration(
 
 Besides the output to screen, this will create a text file “fragments.txt” with description of fragments (size, fragment number). This file can be used to create actual tests (translate the fragments information into packets which are sent to the de-fragment code, to see it manages to build the sent message correctly). 
 Note: Just in case anyone thinks of using this example for testing de-fragmentation (unlikely, I know): Don’t send the same information in each fragment, since you won’t be able to note a bug where fragments were assembled not in order. 
+
 3)	The example given is for positive tests: it describes valid fragments and correct setting of fragment numbers. You can modify this model to create more interesting tests. For example: Create fragments that are out-of-order. See file test-non_seq_fragNumbers.py 
 
 4)	Negative tests can be created by modifying the code to (for example) skip a fragment. Or send the same fragment twice. You can also add illegal transitions to the state machine, and take them only sometimes (there is a “weight” parameter for each edge, that can be added to the edge description in the model json file).
