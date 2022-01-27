@@ -17,7 +17,7 @@ Instructions:  https://docs.microsoft.com/en-us/windows/wsl/install-manual .
 5)	GraphWalker Google group:  https://groups.google.com/g/graphwalker. It is active (at least was when I wrote this…)
 
 Running the example
-1)	In case you made any changes to the mode, you can check it for errors using: 
+1)	In case you made any changes to the model, you can check it for errors using: 
 
 altwalker check -m models/fragmentation_model.json "random(vertex_coverage(100))"
 
