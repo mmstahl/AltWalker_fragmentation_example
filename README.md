@@ -10,7 +10,10 @@ Instructions:  https://docs.microsoft.com/en-us/windows/wsl/install-manual .
  Note also that the WSL takes disk space, but does not give back the space after you delete files in it. So the installation can grow to be quite large (10s or more GBytes). See this URL how to shrink the installation: https://stephenreescarter.net/how-to-shrink-a-wsl2-virtual-disk/
 
 3)	AltWalker installation instructions: https://gitlab.com/altom/AltWalker/AltWalker . Note that this example was developed and tested on WSL, with Ubuntu 20.04 distribution. Be careful about installing java - the example here works only until jave version 11.
-   Use: sudo apt install openjdk-11-jdk    to install it. 
+   Use the below to install it.
+  	```
+   sudo apt install openjdk-11-jdk
+   ```  
 
 5)	AltWalker documentation: https://altom.gitlab.io/AltWalker/AltWalker/index.html
 
