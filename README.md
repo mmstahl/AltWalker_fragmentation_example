@@ -23,7 +23,7 @@ Instructions:  https://docs.microsoft.com/en-us/windows/wsl/install-manual .
 Running the example
 1)	In case you made any changes to the model, you can check it for errors using: 
 
-       altwalker check -m models/fragmentation_model.json "random(vertex_coverage(100))"
+       `altwalker check -m models/fragmentation_model.json "random(vertex_coverage(100))"`
 
 A good model will give this result: 
 
@@ -38,12 +38,12 @@ A good model will give this result:
 
 2)	To run the model, use a command similar to this one (you may want to change the stop criteria; see https://github.com/GraphWalker/graphwalker-project/wiki/Generators-and-stop-conditions )
 
-      altwalker online tests -m models/fragmentation_model.json "random(time_duration(2))"
+      `altwalker online tests -m models/fragmentation_model.json "random(time_duration(2))"`
 
 Besides the output to screen, this will create a text file “fragments.txt” with description of fragments (size, fragment number). This file can be used to create actual tests (translate the fragments information into packets which are sent to the de-fragment code, to see it manages to build the sent message correctly). 
 Note: Just in case anyone thinks of using this example for testing de-fragmentation (unlikely, I know): Don’t send the same information in each fragment, since you won’t be able to note a bug where fragments were assembled not in order. 
 
-3)	The example given is for positive tests: it describes valid fragments and correct setting of fragment numbers. You can modify this model to create more interesting tests. For example: Create fragments that are out-of-order. See file test-non_seq_fragNumbers.py 
+3)	The example given is for positive tests: it describes valid fragments and correct setting of fragment numbers. You can modify this model to create more interesting tests. For example: Create fragments that are out-of-order. See file test-non_seq_fragNumbers.py . To have this model run, rename the tests/test.py to some other name, and rename test-non_seq_fragNumbers.py to test.py (it is always the "test.py" file that is used). 
 
 4)	Negative tests can be created by modifying the code to (for example) skip a fragment. Or send the same fragment twice. You can also add illegal transitions to the state machine, and take them only sometimes (there is a “weight” parameter for each edge, that can be added to the edge description in the model json file).
 
