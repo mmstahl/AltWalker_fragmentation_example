@@ -7,14 +7,16 @@ Installation and resources
 1)	For Window users: Install WSL:  
 Instructions:  https://docs.microsoft.com/en-us/windows/wsl/install-manual . 
  Note that if you have a backup system running on your Windows machine, it will most likely NOT backup the WSL installation. So consider how to save your development files (maybe use Git or similar), so you don’t lose everything when (not “if”) your disk crashes. 
- Note also that the WSL takes disk space, but does not give back the space after you delete files in it. So the installation can grow to be quite large (10s or more GBytes). See this URL how to shrink the installation: https://stephenreescarter.net/how-to-shrink-a-wsl2-virtual-disk/ 
-2)	AltWalker installation instructions: https://gitlab.com/altom/AltWalker/AltWalker . Note that this example was developed and tested on WSL, with Ubuntu 20.04 distribution. 
+ Note also that the WSL takes disk space, but does not give back the space after you delete files in it. So the installation can grow to be quite large (10s or more GBytes). See this URL how to shrink the installation: https://stephenreescarter.net/how-to-shrink-a-wsl2-virtual-disk/
 
-3)	AltWalker documentation: https://altom.gitlab.io/AltWalker/AltWalker/index.html
+3)	AltWalker installation instructions: https://gitlab.com/altom/AltWalker/AltWalker . Note that this example was developed and tested on WSL, with Ubuntu 20.04 distribution. Be careful about installing java - the example here works only until jave version 11.
+   Use: sudo apt install openjdk-11-jdk    to install it. 
 
-4)	AltWalker is a python wrapper for GraphWalker. See  documentation for GraphWalker here: https://github.com/GraphWalker/graphwalker-project/wiki . I found of special important the page that explains the stop conditions:  https://github.com/GraphWalker/graphwalker-project/wiki/Generators-and-stop-conditions  .
+5)	AltWalker documentation: https://altom.gitlab.io/AltWalker/AltWalker/index.html
 
-5)	GraphWalker Google group:  https://groups.google.com/g/graphwalker. It is active (at least was when I wrote this…)
+6)	AltWalker is a python wrapper for GraphWalker. See  documentation for GraphWalker here: https://github.com/GraphWalker/graphwalker-project/wiki . I found of special important the page that explains the stop conditions:  https://github.com/GraphWalker/graphwalker-project/wiki/Generators-and-stop-conditions  .
+
+7)	GraphWalker Google group:  https://groups.google.com/g/graphwalker. It is active (at least was when I wrote this…)
 
 Running the example
 1)	In case you made any changes to the model, you can check it for errors using: 
