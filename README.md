@@ -11,9 +11,8 @@ Instructions:  https://docs.microsoft.com/en-us/windows/wsl/install-manual .
 
 3)	AltWalker installation instructions: https://gitlab.com/altom/AltWalker/AltWalker . Note that this example was developed and tested on WSL, with Ubuntu 20.04 distribution. Be careful about installing java - the example here works only until jave version 11.
    Use the below to install it.
-  	```
-   sudo apt install openjdk-11-jdk
-   ```  
+  	
+  	`sudo apt install openjdk-11-jdk`  
 
 5)	AltWalker documentation: https://altom.gitlab.io/AltWalker/AltWalker/index.html
 
